@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import SeccionPruebas from './components/SeccionPruebas';
 import Peliculas from './components/Peliculas';
+import Guia from './Guia';
 
 function App() {
   var buttonString = 'Ir al blog';
@@ -19,7 +20,7 @@ function App() {
         btn={buttonString}
       />
       <div className="center">
-        <Peliculas />
+        <Guia />
         <Sidebar />
         <div className="clearfix"></div>
       </div> {/* End div center */}
