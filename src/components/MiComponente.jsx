@@ -10,7 +10,7 @@ class MiComponente extends Component {
         }
 
         return (
-            <div className="mi-componente">
+            <div id="content" className="mi-componente">
                 <h1>{'Producto: ' + receta.nombre}</h1>
                 <h2>{'Valor nutricional: ' + receta.calorias}</h2>
                 <ol>
