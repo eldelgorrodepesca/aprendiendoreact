@@ -1,0 +1,26 @@
+import React, { Component } from 'react'
+
+// Componentes
+import Slider from './Slider';
+import Sidebar from './Sidebar';
+
+class Blog extends Component {
+    render() {
+        return (
+            <div id='blog'>
+                <Slider
+                    title='Bienvenido al curso de React con @eldelgorrodepesca'
+                    btn='Ir al Blog'
+                />
+                <div className="center">
+                    <div id='content'>
+                        <h1 className='subheader'>Últimos articulos</h1>
+                    </div>
+                    <Sidebar />
+                </div>
+            </div>
+        )
+    }
+}
+
+export default Blog;
