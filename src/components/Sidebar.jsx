@@ -5,10 +5,12 @@ class Sidebar extends Component {
     render() {
         return (
             <aside id="sidebar">
-                <div id="nav-blog" className="sidebar-item">
-                    <h3>¿Quieres crear tu propio articulo?</h3>
-                    <a href="" className="btn btn-success">Crear articulo</a>
-                </div>
+                {this.props.blog == 'true' &&
+                    <div id="nav-blog" className="sidebar-item">
+                        <h3>¿Quieres crear tu propio articulo?</h3>
+                        <a href="" className="btn btn-success">Crear articulo</a>
+                    </div>
+                }
 
                 <div id="search" className="sidebar-item">
                     <h3>Buscador de articulos</h3>

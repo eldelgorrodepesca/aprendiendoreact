@@ -14,6 +14,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import Blog from './components/Blog';
 
 class Guia extends Component {
     render() {
@@ -26,7 +27,7 @@ class Guia extends Component {
                 <Switch>
                     <Route exact path='/' component={Home} />
                     <Route exact path='/home' component={Home} />
-                    <Route exact path='/ruta-prueba' component={SeccionPruebas} />
+                    <Route exact path='/blog' component={Blog} />
                     <Route exact path='/segunda-ruta' component={MiComponente} />
 
                     <Route exact path="/pagina-1" render={() => (

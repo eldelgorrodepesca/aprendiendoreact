@@ -8,15 +8,19 @@ class Blog extends Component {
     render() {
         return (
             <div id='blog'>
-                <Slider
-                    title='Bienvenido al curso de React con @eldelgorrodepesca'
-                    btn='Ir al Blog'
+                <Slider 
+                    title='Blog' 
+                    size='slider-small'
                 />
+
                 <div className="center">
                     <div id='content'>
-                        <h1 className='subheader'>Últimos articulos</h1>
+                        {/* Listado de articulos que vienen del api rest de Node */}
                     </div>
-                    <Sidebar />
+
+                    <Sidebar
+                        blog='true'
+                    />
                 </div>
             </div>
         )

@@ -11,6 +11,7 @@ class Home extends Component {
                 <Slider
                     title='Bienvenido al curso de React con @eldelgorrodepesca'
                     btn='Ir al Blog'
+                    size='slider-big'
                 />
                 <div className="center">
                     <div id='content'>
